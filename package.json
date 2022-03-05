@@ -5,9 +5,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "lint": "eslint . && prettier-eslint --list-different **/*.js",
+    "format": "prettier-eslint --write **/*.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-jest": "^27.5.1",
+    "eslint": "^8.10.0",
+    "eslint-plugin-jest": "^26.1.1",
+    "eslint-plugin-react": "^7.29.3",
+    "jest": "^27.5.1",
+    "prettier-eslint-cli": "^5.0.1",
+    "react-dom": "^17.0.2"
+  },
+  "dependencies": {
+    "react": "^17.0.2"
+  }
 }
